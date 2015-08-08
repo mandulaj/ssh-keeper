@@ -1,0 +1,26 @@
+{
+  "name": "ssh-keeper",
+  "version": "1.0.0",
+  "description": "SSH key manager and deployer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zpiman/ssh-keeper"
+  },
+  "keywords": [
+    "SSH",
+    "keys",
+    "manager",
+    "deployer",
+    "RSA"
+  ],
+  "author": "Jakub Mandula <jakub.aludnam@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zpiman/ssh-keeper/issues"
+  },
+  "homepage": "https://github.com/zpiman/ssh-keeper"
+}
