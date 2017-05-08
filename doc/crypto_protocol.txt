@@ -1,20 +1,21 @@
 Saved file example:
 {
   main: {
-    "data": "-----encrypted-------"
-    "iv": "xxxxxxxxxxxxx"
-    "crypto_config": {
-      "salt": "xyz",
+    "header": {
+      "saltCrypto": "xyz",
       "cipher": "xyz",
+      "iv": "xxxxxxxxxxxxx"
       ...
     }
+    "data": "-----encrypted-------"
   }
   hmac: "XXXXXXXXX"
 }
 
 Encryption:
-1. Transform key for usage in crypto.
-2. Generate random iv
+1. Generate random iv and salt
+2. Transform key for usage in crypto.
+3. Serialize and compress data
 3. Encrypt data using iv and key and crypto_config settings
 4. HMAC the content of main and save it in the new document
 
